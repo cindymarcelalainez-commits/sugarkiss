@@ -1,4 +1,4 @@
-/* ==========================================
+//* ==========================================
    SUGAR KISS - ESTILOS COMPLETOS & COMPATIBLES
    ========================================== */
 
@@ -412,27 +412,6 @@ footer {
   50% { transform: scale(1.1); }
 }
 
-/* Responsive */
-@media (max-width: 768px) {
-  .hero {
-    flex-direction: column;
-    text-align: center;
-    padding-top: 2rem;
-  }
-  .btn-group {
-    justify-content: center;
-  }
-  .img-principal {
-    width: 260px;
-    height: 260px;
-    margin-top: 2rem;
-  }
-  .nav-links {
-    display: none;
-  }
-}
-
-
 /* --- ESTILOS SECCIÓN NOSOTROS --- */
 .seccion-nosotros {
   padding: 4rem 8%;
@@ -491,7 +470,6 @@ footer {
   font-size: 0.95rem;
   color: #555;
 }
-
 
 /* --- ESTILOS SECCIÓN PEDIDOS --- */
 .seccion-pedidos {
@@ -627,3 +605,42 @@ footer {
   color: #555;
 }
 
+/* --- RESPONSIVE ADAPTACIÓN A CELULARES (CORREGIDO) --- */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    padding: 1rem;
+    gap: 12px;
+  }
+
+  .nav-links {
+    display: flex; /* Asegura que los enlaces se muestren en teléfono */
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+  }
+
+  .nav-links a {
+    font-size: 0.85rem;
+    padding: 6px 12px;
+    background-color: var(--rosa-pastel);
+    border-radius: 20px;
+  }
+
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    padding-top: 2rem;
+  }
+
+  .btn-group {
+    justify-content: center;
+  }
+
+  .img-principal {
+    width: 250px;
+    height: 250px;
+    margin-top: 2rem;
+  }
+}
